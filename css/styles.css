@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@400;700;900&family=Permanent+Marker&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #ffcc80;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: "Permanent Marker", cursive;
+  color: #f25313;
+  font-size: 5.8vw;
+  position: absolute;
+  z-index: 1;
+  top: 20%;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+/* Navigation */
+
+.navbar-container {
+  margin: auto 15%;
+}
+
+.nav-item-nav {
+  font-family: "Dancing Script", cursive;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.navlink {
+  color: #ff9900;
+  padding-right: 1vw;
+}
+
+.navlink:hover {
+  color: #ffcc80;
+  text-decoration: none;
+}
+
+.logo-img {
+  width: 100%;
+  height: auto;
+  max-width: 80px;
+  border-radius: 100%;
+  position: relative;
+}
+
+.logo-img:hover {
+  z-index: -1;
+}
+
+/* Home */
+
+#home {
+  margin: 5% auto;
+  padding: 5% 10%;
+}
+
+.home-img {
+  display: block;
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+  max-width: 1000px;
+}
+.container-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+}
+
+/* About */
+
+#about {
+  background-color: #333;
+  text-align: justify;
+  padding: 50px;
+}
+
+.container-about {
+  margin: 2% auto;
+  padding-top: 3%;
+  padding-bottom: 7%;
+}
+
+.symbols-list, .history-list {
+  list-style: none;
+}
+
+.symbols-list li::before, .history-list li::before {
+  content: "\1F577";
+  color: #ff9900;
+  font-weight: 700;
+  display: inline-block;
+  width: 1.5em;
+}
+
+.symbols-list li::before {
+  content: "\1F383";
+}
+
+.about-img1,
+.about-img2,
+.about-img3 {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  border-radius: 15%;
+  border: 4px solid #ff9900;
+}
+
+.about-img1,
+.about-img3 {
+  float: left;
+  margin-right: 30px;
+}
+
+.about-img2 {
+  float: right;
+  margin-left: 30px;
+}
+
+/* Gallery */
+
+#gallery {
+  margin: 10%;
+  text-align: center;
+}
+
+.gallery-img {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+}
+
+/* Contact */
+
+#contact {
+  margin-top: 3%;
+  padding-top: 2%;
+  color: #ff9900;
+  background-color: #333;
+}
+
+.contact-icons {
+  color: #ffcc80;
+}
+
+.contact-icons:hover {
+  color: #ff9900;
+}
+
+.cright {
+  color: #ffcc80;
+}
+
+.cright:hover {
+  text-decoration: none;
+  color: #ff9900;
+}
+
+.text-contact {
+  font-size: 10px;
+  margin-bottom: 0;
+  padding-bottom: 2%;
+}
