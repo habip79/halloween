@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Habip YILDIRIM">
-    <meta name="description" content="Halloween Themed Web Site using HTML, CSS, Bootstrap for www.w3schools.com discord channel event">
+    <meta name="description"
+        content="Halloween Themed Web Site using HTML, CSS, Bootstrap and a little bit Javascript for www.w3schools.com discord channel event">
     <title>Happy Halloween!</title>
     <link rel="icon" href="images/favicon.ico">
 
@@ -19,7 +20,7 @@
 
     <!-- Fontawesome Script -->
     <script src="https://kit.fontawesome.com/94282af30d.js" crossorigin="anonymous"></script>
-   
+
 </head>
 
 <body>
@@ -28,7 +29,8 @@
 
     <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #333;">
         <div class="container navbar-container">
-            <img src="images/bat.png" alt="Logo" width="80" height="80" class="d.d-inline-block ml-5 logo-img">
+            <img id="logoimg" onmouseover="mouseOver()" onmouseout="mouseOut()" src="images/bat.png" alt="Logo"
+                width="80" height="80" class="d.d-inline-block ml-5">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -173,6 +175,17 @@
 
     </footer>
 
+    <script>
+        function mouseOver() {
+            document.getElementById("logoimg").style.visibility = "hidden";
+        }
+
+        function mouseOut() {
+            document.getElementById("logoimg").style.visibility = "visible";
+        }
+
+    </script>
+
     <!-- Bootstrap Script-->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -180,7 +193,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
-    
+
 </body>
 
 </html>
